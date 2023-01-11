@@ -84,22 +84,20 @@ public class AlbumController : ControllerBase
         try
         {
             Album? albumToDelete = context.Albums.Find(id);
-                if(albumToDelete != null)
-                {
-                    context.Albums.Remove(albumToDelete);
-                    context.SaveChanges();
-                    return NoContent();
-                }
-                else
-                {
-                    return NotFound();
-                }
+            if (albumToDelete != null)
+            {
+                context.Albums.Remove(albumToDelete);
+                context.SaveChanges();
+                return NoContent();
+            }
+            else
+            {
+                return NotFound();
+            }
         }
         catch
         {
             return StatusCode(500);
         }
     }
-
-
 }

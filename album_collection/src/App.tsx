@@ -1,9 +1,12 @@
-import React from 'react';
 import './App.css';
+import { AlbumPage } from './pages/AlbumPage';
+
 
 function App() {
   return (
-    <></>
+    <>
+      <AlbumPage />
+    </>
   );
 }
 
