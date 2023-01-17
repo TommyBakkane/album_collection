@@ -5,5 +5,5 @@ export interface IAlbum {
     artist: string;
     genre: string;
     releaseDate: string;
-    rating: number;
-}
+    rating: string;
+} 
