@@ -1,0 +1,14 @@
+.add-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    text-align: center;
+}
+
+.add-header, .text-input, .btn{
+    grid-column: auto /span 12;
+}
+
+.text-input{
+    margin: 1rem;
+    padding: 1rem;
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/eier/Desktop/Privat/album_collection/AlbumApi/AlbumApi.csproj": {}
+    "/Users/eier/Desktop/Privat/Album/AlbumApi/AlbumApi.csproj": {}
   },
   "projects": {
-    "/Users/eier/Desktop/Privat/album_collection/AlbumApi/AlbumApi.csproj": {
+    "/Users/eier/Desktop/Privat/Album/AlbumApi/AlbumApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/eier/Desktop/Privat/album_collection/AlbumApi/AlbumApi.csproj",
+        "projectUniqueName": "/Users/eier/Desktop/Privat/Album/AlbumApi/AlbumApi.csproj",
         "projectName": "AlbumApi",
-        "projectPath": "/Users/eier/Desktop/Privat/album_collection/AlbumApi/AlbumApi.csproj",
+        "projectPath": "/Users/eier/Desktop/Privat/Album/AlbumApi/AlbumApi.csproj",
         "packagesPath": "/Users/eier/.nuget/packages/",
-        "outputPath": "/Users/eier/Desktop/Privat/album_collection/AlbumApi/obj/",
+        "outputPath": "/Users/eier/Desktop/Privat/Album/AlbumApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/eier/.nuget/NuGet/NuGet.Config"

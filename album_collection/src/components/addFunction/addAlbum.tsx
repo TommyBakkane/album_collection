@@ -2,6 +2,7 @@ import { ChangeEvent, useState } from "react";
 import { AlbumService } from "../../services/AlbumService";
 import { IAlbum } from "../../interfaces/IAlbum";
 import { ImageUploadService } from "../../services/ImageUploadService";
+import "./AddFunction.css"
 
 export const AddAlbum = () => {
     const [title, setTitle] = useState<string>("");
@@ -13,8 +14,8 @@ export const AddAlbum = () => {
     const [rating, setRating] = useState<string>("");
 
     const changeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        const {title, value} = e.target;
-        switch (title){
+        const {name, value} = e.target;
+        switch (name){
             case "title":
                 setTitle(value);
                 break;
@@ -38,6 +39,9 @@ export const AddAlbum = () => {
             case "rating":
                 setRating(value);
                 break;
+            case "genre":
+                setGenre(value);
+                break;
         }
     }
 
@@ -50,26 +54,29 @@ export const AddAlbum = () => {
             releaseDate,
             rating
         }
+        console.log(album);
+        await AlbumService.addAlbum(album)
     }
 
     const uploadImage = async () => {
         if (image != null) {
             ImageUploadService.uploadImage(imageFile!);
+            console.log(imageFile);
+            
         } 
     }
 
-    const submitCharacter = () => {
-        AddAlbum();
+    const submitAlbum = () => {
+        addAlbum();
         uploadImage();
-        window.location.reload();
     };
 
 
     return(
-        <section className="add__container" id="add__function">
+        <section className="add-container" id="add-function">
 
             <label
-                className="add__header"
+                className="add-header"
                 >Add an Album:
             </label>
 
@@ -113,7 +120,7 @@ export const AddAlbum = () => {
                 onChange={changeHandler}
             />
 
-            <label className="input__label">
+            <label className="input-label">
                 Press to Add Image
                 <input 
                     className="file__input" 
@@ -122,13 +129,13 @@ export const AddAlbum = () => {
                     placeholder="Image"
                     name="image"
                 /> 
-            </label> <br />
+            </label>
 
             <input 
                 className="btn" 
                 type="button" 
                 value="Submit"
-                onClick={submitCharacter} 
+                onClick={submitAlbum} 
             />  
 
         </section>

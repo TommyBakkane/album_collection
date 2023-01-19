@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AlbumApi.Controllers;
 
 [ApiController]
-[Route("controller")]
+[Route("[controller]")]
 
 public class UploadImageController : ControllerBase
 {

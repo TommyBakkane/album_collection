@@ -2,7 +2,7 @@ import axios from 'axios';
 import { IAlbum } from '../interfaces/IAlbum';
 
 export const AlbumService = (()=> {
-    const endpoints = {"Albums": "https://localhost:7275/album"}
+    const endpoints = {"Albums": "https://localhost:7275/Album"}
 
     const getAlbums = async () => {
         const response = await axios.get(endpoints.Albums);

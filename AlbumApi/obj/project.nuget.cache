@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FW8EjGQ6ktIRua7Hk3wn7OJPz/5KPcrxZmRp+O3IMV8NGqXmHxgZFbr2DBsTE9oIAdKdnltL7RkqIls8K6sdog==",
+  "dgSpecHash": "59cXmmQzQxEQwE0PDobUKyOGsdKFQiGsAp92w83ExYt0Tjw9oX2tM/aC9obEiYB3T13g6g1wbC1cgOFQh2eiEA==",
   "success": true,
-  "projectFilePath": "/Users/eier/Desktop/Privat/album_collection/AlbumApi/AlbumApi.csproj",
+  "projectFilePath": "/Users/eier/Desktop/Privat/Album/AlbumApi/AlbumApi.csproj",
   "expectedPackageFiles": [
     "/Users/eier/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/eier/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
