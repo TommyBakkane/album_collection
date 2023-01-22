@@ -1,31 +1,48 @@
-import { Link, Route, Routes } from "react-router-dom";
-import { AddPage } from "../../pages/AddPage";
-import { AlbumPage } from "../../pages/AlbumPage";
-import {TbVinyl} from 'react-icons/tb'
-import "./NavBar.css"
+import { Link} from "react-router-dom";
+import * as HiIcons from "react-icons/hi";
+import "./Navbar.css"
+import { useState } from "react";
+import { SidebarData } from "./SidebarData";
+import { IconContext } from "react-icons";
 
-export const NavBar = () => {
+export const Navbar = () => {
+  const [sidebar, setSidebar] = useState(false)
+
+  const showSidebar = () => setSidebar(!sidebar)
+
     return (
     <>
-      <nav className="navbar">
-        <a href="Home">
-          <TbVinyl className="logo"/>
-        </a>
+    <IconContext.Provider value={{color: '#fff'}}>
+      
+      <div className="navbar">
+      <h1 className="title">Album Collection</h1>
+        <Link to="#" className="menu-bars">
+          <HiIcons.HiMenu onClick={showSidebar}/>
+        </Link>
+      </div>
 
-        <div className="navbar-links">
-          <ul>
-            <li><Link to="Home"><h4>Home</h4></Link></li>
-            <li><Link to="Add"><h4>Add</h4></Link></li>
-          </ul>
-        </div>
+      <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+        <ul className='nav-menu-items' onClick={showSidebar}>
+          <li className='navbar-toggle'>
+            <Link to='#' className='menu-bars'>
+              <HiIcons.HiX />
+            </Link>
+          </li>
+          {SidebarData.map((item, index) => {
+            return (
+              <li key={index} className={item.cName}>
+                <Link to={item.path}>
+                  {item.icon}
+                  <span>{item.title}</span>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
 
-       </nav>
-
-
-      <Routes>
-        <Route path="Home" element={ <AlbumPage/> }></Route>
-        <Route path="Add" element={ <AddPage/> }></Route>
-      </Routes>
+      </nav>
+      
+      </IconContext.Provider>
     </>
         
     );

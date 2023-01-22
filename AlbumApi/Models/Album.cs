@@ -11,6 +11,4 @@ public class Album : IAlbum
     public string Image {get; set;} = null!;
     public string Artist {get; set;} = null!;
     public string Genre {get; set;} =  null!;
-    public string ReleaseDate {get; set;} =  null!;
-    public double Rating {get; set;}
 }

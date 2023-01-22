@@ -4,6 +4,4 @@ export interface IAlbum {
     image: string;
     artist: string;
     genre: string;
-    releaseDate: string;
-    rating: string;
 } 

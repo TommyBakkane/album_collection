@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AlbumApi.Migrations
 {
     [DbContext(typeof(AlbumApiContext))]
-    [Migration("20230111162301_SecondCreate")]
-    partial class SecondCreate
+    [Migration("20230122171022_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,13 +34,6 @@ namespace AlbumApi.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Image")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<double>("Rating")
-                        .HasColumnType("REAL");
-
-                    b.Property<string>("ReleaseDate")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

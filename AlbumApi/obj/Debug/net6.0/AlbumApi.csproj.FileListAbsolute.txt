@@ -216,3 +216,4 @@
 /Users/eier/Desktop/Privat/Album/AlbumApi/obj/Debug/net6.0/AlbumApi.pdb
 /Users/eier/Desktop/Privat/Album/AlbumApi/obj/Debug/net6.0/AlbumApi.genruntimeconfig.cache
 /Users/eier/Desktop/Privat/Album/AlbumApi/obj/Debug/net6.0/ref/AlbumApi.dll
+/Users/eier/Desktop/Privat/Album/AlbumApi/bin/Debug/net6.0/AlbumApi.staticwebassets.runtime.json

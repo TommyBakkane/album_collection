@@ -3,7 +3,7 @@ import { AlbumItem } from "./AlbumItem";
 import { AlbumService } from "../../services/AlbumService";
 import { IAlbum } from "../../interfaces/IAlbum";
 
-const albumList = () => {
+export const AlbumList = () => {
     const [albums, setAlbums] = useState<IAlbum[]>([]);
 
     useEffect(() => {
@@ -23,8 +23,6 @@ const albumList = () => {
             image={album.image}
             artist={album.artist}
             genre={album.genre}
-            releaseDate={album.releaseDate}
-            rating={album.rating}
             />
         ))
     }

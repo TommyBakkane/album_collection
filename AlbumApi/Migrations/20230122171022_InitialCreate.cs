@@ -19,9 +19,7 @@ namespace AlbumApi.Migrations
                     Title = table.Column<string>(type: "TEXT", nullable: false),
                     Image = table.Column<string>(type: "TEXT", nullable: false),
                     Artist = table.Column<string>(type: "TEXT", nullable: false),
-                    Genre = table.Column<string>(type: "TEXT", nullable: false),
-                    ReleaseDate = table.Column<string>(type: "TEXT", nullable: false),
-                    Rating = table.Column<double>(type: "REAL", nullable: false)
+                    Genre = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

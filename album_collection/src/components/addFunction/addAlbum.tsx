@@ -10,12 +10,10 @@ export const AddAlbum = () => {
     const [imageFile, setImageFile] = useState<File | null>(null);
     const [artist, setArtist] = useState<string>("");
     const [genre, setGenre] = useState<string>("");
-    const [releaseDate, setReleaseDate] = useState<string>("");
-    const [rating, setRating] = useState<string>("");
 
     const changeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        const {title, value} = e.target;
-        switch (title){
+        const {name, value} = e.target;
+        switch (name){
             case "title":
                 setTitle(value);
                 break;
@@ -31,15 +29,6 @@ export const AddAlbum = () => {
                 setArtist(value);
                 break;
             case "genre":
-                setTitle(value);
-                break;
-            case "releaseDate":
-                setReleaseDate(value);
-                break;
-            case "rating":
-                setRating(value);
-                break;
-            case "genre":
                 setGenre(value);
                 break;
         }
@@ -51,8 +40,6 @@ export const AddAlbum = () => {
             image,
             artist,
             genre,
-            releaseDate,
-            rating
         }
         console.log(album);
         await AlbumService.addAlbum(album)
@@ -104,29 +91,11 @@ export const AddAlbum = () => {
                 onChange={changeHandler}
             />
 
-            <input
-                className="text-input"
-                type="text"
-                placeholder="Release Date"
-                name="releaseDate"
-                onChange={changeHandler}
-            />
-
-            <input
-                className="text-input"
-                type="text"
-                placeholder="Rating"
-                name="rating"
-                onChange={changeHandler}
-            />
-
-            <label className="input-label">
-                Press to Add Image
+            <label>
                 <input 
-                    className="file__input" 
+                    className="file-input" 
                     onChange={changeHandler} 
                     type="file"
-                    placeholder="Image"
                     name="image"
                 /> 
             </label>
@@ -135,7 +104,7 @@ export const AddAlbum = () => {
                 className="btn" 
                 type="button" 
                 value="Submit"
-                onClick={submitAlbum} 
+                onClick={addAlbum} 
             />  
 
         </section>

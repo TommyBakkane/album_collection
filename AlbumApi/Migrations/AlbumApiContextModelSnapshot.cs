@@ -34,13 +34,6 @@ namespace AlbumApi.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<double>("Rating")
-                        .HasColumnType("REAL");
-
-                    b.Property<string>("ReleaseDate")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("TEXT");
