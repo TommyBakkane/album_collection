@@ -14,8 +14,8 @@ export const AddAlbum = () => {
     const [rating, setRating] = useState<string>("");
 
     const changeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        const {name, value} = e.target;
-        switch (name){
+        const {title, value} = e.target;
+        switch (title){
             case "title":
                 setTitle(value);
                 break;
