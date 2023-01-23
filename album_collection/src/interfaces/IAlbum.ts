@@ -4,4 +4,5 @@ export interface IAlbum {
     image: string;
     artist: string;
     genre: string;
+    year: number;
 } 

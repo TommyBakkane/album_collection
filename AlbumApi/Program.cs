@@ -1,6 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using AlbumApi.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AlbumApiContext>(options => options.UseSqlite("Data Source=album.db"));
+
 builder.Services.AddCors(
     options => 
         options.AddPolicy("AllowAll", 
@@ -20,6 +25,11 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 app.UseCors("AllowAll");
+
+DefaultFilesOptions options = new DefaultFilesOptions();
+options.DefaultFileNames.Add("index.html");
+app.UseDefaultFiles(options);
+app.UseStaticFiles();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

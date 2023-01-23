@@ -3,7 +3,7 @@ import * as HiIcons from "react-icons/hi";
 export const SidebarData = [
     {
         title: 'Home',
-        path: '/Album',
+        path: '/Home',
         icon: <HiIcons.HiHome />,
         cName: 'nav-text'
     },

@@ -10,6 +10,7 @@ export const AddAlbum = () => {
     const [imageFile, setImageFile] = useState<File | null>(null);
     const [artist, setArtist] = useState<string>("");
     const [genre, setGenre] = useState<string>("");
+    const [year, setYear] = useState<number>(0);
 
     const changeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         const {name, value} = e.target;
@@ -31,6 +32,9 @@ export const AddAlbum = () => {
             case "genre":
                 setGenre(value);
                 break;
+            case "year":
+                setYear(parseInt(value));
+                break;
         }
     }
 
@@ -40,6 +44,7 @@ export const AddAlbum = () => {
             image,
             artist,
             genre,
+            year
         }
         console.log(album);
         await AlbumService.addAlbum(album)
@@ -88,6 +93,14 @@ export const AddAlbum = () => {
                 type="text"
                 placeholder="Genre"
                 name="genre"
+                onChange={changeHandler}
+            />
+
+            <input
+                className="text-input"
+                type="text"
+                placeholder="Release Year"
+                name="year"
                 onChange={changeHandler}
             />
 

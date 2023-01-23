@@ -23,19 +23,6 @@ public class AlbumController : ControllerBase
         return await _context.Albums.ToListAsync();
     }
 
-    [HttpGet("{id}")]
-    public async Task<ActionResult<Album>> GetAlbum(int id)
-    {
-        var album = await _context.Albums.FindAsync(id);
-
-        if (album == null)
-        {
-            return NotFound();
-        }
-
-        return album;
-    }
-
     [HttpPut("{id}")]
     public async Task<IActionResult> PutAlbum(int id, Album album)
     {
@@ -94,29 +81,4 @@ public class AlbumController : ControllerBase
         return _context.Albums.Any(e => e.Id == id);
     }
 
-    [HttpGet("search/{title}")]
-    public async Task<ActionResult<IEnumerable<Album>>> SearchAlbums(string title)
-    {
-        var albums = await _context.Albums.Where(a => a.Title.Contains(title)).ToListAsync();
-
-        if (albums == null)
-        {
-            return NotFound();
-        }
-
-        return albums;
-    }
-
-    [HttpGet("search/{artist}")]
-    public async Task<ActionResult<IEnumerable<Album>>> SearchAlbumsByArtist(string artist)
-    {
-        var albums = await _context.Albums.Where(a => a.Artist.Contains(artist)).ToListAsync();
-
-        if (albums == null)
-        {
-            return NotFound();
-        }
-
-        return albums;
-    }
 }

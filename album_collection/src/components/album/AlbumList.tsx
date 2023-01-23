@@ -23,6 +23,7 @@ export const AlbumList = () => {
             image={album.image}
             artist={album.artist}
             genre={album.genre}
+            year={album.year}
             />
         ))
     }

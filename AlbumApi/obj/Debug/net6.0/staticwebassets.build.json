@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pPEBNuppG8QXZcr+dQCN4xoP0Jhi83vm8fKnhJY187U=",
+  "Hash": "k9clr6pjI3FXFIv8ez+ochvJzor2gKo7udFNBRsm3yc=",
   "Source": "AlbumApi",
   "BasePath": "_content/AlbumApi",
   "Mode": "Default",
@@ -15,5 +15,74 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/.DS_Store",
+      "SourceId": "AlbumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/",
+      "BasePath": "_content/AlbumApi",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/images/mac-miller-circles.webp",
+      "SourceId": "AlbumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/",
+      "BasePath": "_content/AlbumApi",
+      "RelativePath": "images/mac-miller-circles.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/mac-miller-circles.webp"
+    },
+    {
+      "Identity": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/images/phoebe-bridgers-punisher.webp",
+      "SourceId": "AlbumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/",
+      "BasePath": "_content/AlbumApi",
+      "RelativePath": "images/phoebe-bridgers-punisher.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/phoebe-bridgers-punisher.webp"
+    },
+    {
+      "Identity": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/images/tyler-the-creator-flower-boy.webp",
+      "SourceId": "AlbumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/",
+      "BasePath": "_content/AlbumApi",
+      "RelativePath": "images/tyler-the-creator-flower-boy.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/tyler-the-creator-flower-boy.webp"
+    }
+  ]
 }
