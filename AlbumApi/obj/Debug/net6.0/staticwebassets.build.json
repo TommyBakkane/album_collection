@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "pPEBNuppG8QXZcr+dQCN4xoP0Jhi83vm8fKnhJY187U=",
+  "Source": "AlbumApi",
+  "BasePath": "_content/AlbumApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AlbumApi/wwwroot",
+      "Source": "AlbumApi",
+      "ContentRoot": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/",
+      "BasePath": "_content/AlbumApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
