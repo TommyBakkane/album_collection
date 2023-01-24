@@ -28,6 +28,6 @@ export const AlbumList = () => {
         ))
     }
     return(
-        <section className="output__container">{getAlbumItems()}</section>
+        <section className="output-container">{getAlbumItems()}</section>
     )
 }

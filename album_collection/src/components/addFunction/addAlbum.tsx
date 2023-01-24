@@ -69,7 +69,7 @@ export const AddAlbum = () => {
 
             <label
                 className="add-header"
-                >Add an Album:
+                >Add Album:
             </label>
 
             <input 
@@ -98,7 +98,7 @@ export const AddAlbum = () => {
 
             <input
                 className="text-input"
-                type="text"
+                type="number"
                 placeholder="Release Year"
                 name="year"
                 onChange={changeHandler}
@@ -117,7 +117,7 @@ export const AddAlbum = () => {
                 className="btn" 
                 type="button" 
                 value="Submit"
-                onClick={addAlbum} 
+                onClick={submitAlbum} 
             />  
 
         </section>
