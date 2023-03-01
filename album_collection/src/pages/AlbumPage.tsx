@@ -1,11 +1,13 @@
-import { AlbumList } from "../components/album/AlbumList"
+import { useState, useEffect } from "react";
+import { IAlbum } from "../interfaces/IAlbum";
+import { AlbumService } from "../services/AlbumService";
+import { AlbumItem } from "../components/album/AlbumItem";
 
+export const AlbumPage = () => {
+    
 
-export const AlbumPage = () => {  
-    return (
+    return(
         <>
-            <AlbumList/>
         </>
     )
 }
-

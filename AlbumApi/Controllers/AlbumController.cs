@@ -23,6 +23,19 @@ public class AlbumController : ControllerBase
         return await _context.Albums.ToListAsync();
     }
 
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Album>> GetAlbum(int id)
+    {
+        var album = await _context.Albums.FindAsync(id);
+
+        if (album == null)
+        {
+            return NotFound();
+        }
+
+        return album;
+    }
+
     [HttpPut("{id}")]
     public async Task<IActionResult> PutAlbum(int id, Album album)
     {

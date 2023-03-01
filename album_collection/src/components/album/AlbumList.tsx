@@ -16,18 +16,18 @@ export const AlbumList = () => {
 
     const getAlbumItems = () => {
         return albums?.map((album, i) => (
-            <AlbumItem
-            key={`album-${i}`}
-            id={album.id}
-            title={album.title}
-            image={album.image}
-            artist={album.artist}
-            genre={album.genre}
-            year={album.year}
-            />
+                <AlbumItem
+                key={`album-${i}`}
+                id={album.id}
+                title={album.title}
+                image={album.image}
+                artist={album.artist}
+                genre={album.genre}
+                year={album.year}
+                />
         ))
     }
     return(
-        <section className="output-container">{getAlbumItems()}</section>
+        <section>{getAlbumItems()}</section>
     )
 }

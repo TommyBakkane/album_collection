@@ -1,7 +1,12 @@
-.output-container{
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.album-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-  }
+}
 
 .album-card{
     grid-column: auto /span 12;
@@ -15,7 +20,7 @@
 }
 
 .album-title{
-
+    font-size: 1.5rem;
 }
 
 .album-cover{
