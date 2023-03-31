@@ -1,13 +1,16 @@
-import { useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import { AlbumContext } from "../context/AlbumContext";
 import { IAlbum } from "../interfaces/IAlbum";
 import { AlbumService } from "../services/AlbumService";
-import { AlbumItem } from "../components/album/AlbumItem";
 
-export const AlbumPage = () => {
-    
+
+export const AlbumPage = () => {    
+
+    console.log()
 
     return(
         <>
+        <h1>Title</h1>
         </>
     )
 }
