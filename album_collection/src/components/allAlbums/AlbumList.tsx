@@ -24,6 +24,7 @@ export const AlbumList = () => {
                 artist={album.artist}
                 genre={album.genre}
                 year={album.year}
+                rating={album.rating}
                 />
         ))
     }

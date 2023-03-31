@@ -15,7 +15,8 @@ export const Navbar = () => {
     <IconContext.Provider value={{color: '#fff'}}>
       
       <div className="navbar">
-      <h1 className="title">Album Collection</h1>
+        
+      <Link to="Home"><h1 className="title">Album Collection</h1></Link>
         <Link to="#" className="menu-bars">
           <HiIcons.HiMenu onClick={showSidebar}/>
         </Link>

@@ -12,4 +12,5 @@ public class Album : IAlbum
     public string Artist { get; set; } = null!;
     public string Genre { get; set; } = null!;
     public int Year { get; set; } = 0;
+    public double Rating {get; set;} = 0;
 }

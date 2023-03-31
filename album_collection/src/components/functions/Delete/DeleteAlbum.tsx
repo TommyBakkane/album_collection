@@ -24,7 +24,7 @@ export const DeleteAlbum: FC<Pick<IAlbum, "id">> = ({ id }) => {
 
     return (
         <button className="delete-btn" onClick={deleteAlbum}>
-            <AiIcons.AiFillDelete/>
+            <AiIcons.AiOutlineDelete/>
         </button>
     )
 }

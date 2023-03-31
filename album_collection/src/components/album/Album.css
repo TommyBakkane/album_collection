@@ -1,0 +1,10 @@
+.title-container, .genre-container, .image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+.image{
+    width: 50%;
+    margin: 0 2rem 0 2rem;
+}

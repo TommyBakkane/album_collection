@@ -7,5 +7,6 @@ namespace AlbumApi.Interfaces
         string Artist { get; set; }
         string Genre { get; set; }
         int Year { get; set; }
+        double Rating {get; set;}
     }
 }
