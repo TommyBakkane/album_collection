@@ -1,4 +1,4 @@
-import { AddAlbum } from "../components/addFunction/AddAlbum"
+import { AddAlbum } from "../components/functions/Add/AddAlbum"
 
 export const AddPage = () => {
     return (

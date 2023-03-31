@@ -10,9 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <AlbumProvider>
       <App />
-    </AlbumProvider>
   </React.StrictMode>
 );
 

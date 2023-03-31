@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { IAlbum } from "../../interfaces/IAlbum";
-import { AlbumContext } from "../../context/AlbumContext";
-import { IAlbumContext } from "../../interfaces/IAlbumContext";
+import { IAlbum } from "../../../interfaces/IAlbum";
+import { AlbumContext } from "../../../context/AlbumContext";
+import { IAlbumContext } from "../../../interfaces/IAlbumContext";
 import { FC } from "react";
 import * as AiIcons from "react-icons/ai";
 import "./DeleteAlbum.css";

@@ -1,4 +1,4 @@
-import { AlbumList } from "../components/album/AlbumList"
+import { AlbumList } from "../components/allAlbums/AlbumList"
 
 
 export const HomePage = () => {  
