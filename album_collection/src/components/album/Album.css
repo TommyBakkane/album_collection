@@ -1,10 +1,52 @@
-.title-container, .genre-container, .image-container{
+.title-container, .info-container, .image-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2rem 0 2rem 0;
 }
+
+.album-title{
+    font-size: 3rem;
+    text-align: center;
+}
+.album-artist{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 .image{
     width: 50%;
     margin: 0 2rem 0 2rem;
+}
+
+.album-rating{
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    border: 5px solid black;
+    border-radius: 100%;
+    border-color: white;
+    margin-bottom: 2rem;
+}
+
+.album-genre, .album-year{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.delete-update-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 0 1rem 0 1rem 
+}
+
+.update-btn{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
 }

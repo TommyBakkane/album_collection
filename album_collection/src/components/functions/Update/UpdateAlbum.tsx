@@ -1,15 +1,16 @@
 import { useState, ChangeEvent, useContext, useEffect } from "react";
-import { AlbumContext } from "../../../context/AlbumContext";
 import { AlbumService } from "../../../services/AlbumService";
 import { IAlbum } from "../../../interfaces/IAlbum";
 import { ImageUploadService } from "../../../services/ImageUploadService";
 import { useLocation } from "react-router-dom";
+import "./Update.css"
 
 export const UpdateAlbum = () => {
 
     const location = useLocation();
     const id = location.state?.id;
 
+    const [data, setId] = useState<number>(0);
     const [title, setTitle] = useState<string>("");
     const [image, setImage] = useState<string>("");
     const [imageFile, setImageFile] = useState<File | null>(null);
@@ -18,29 +19,31 @@ export const UpdateAlbum = () => {
     const [year, setYear] = useState<number>(0);
     const [rating, setRating] = useState<number>(0);
 
-    const albumContext = useContext(AlbumContext);
+    const [album, setAlbum] = useState<IAlbum>();
 
-    const getAlbumFromService = async (id: number) => {
-        console.log("I am trying to get:" + id);
-        const album = await AlbumService.getAlbumById(id);
-        setTitle(album.title);
-        setArtist(album.artist);
-        setGenre(album.genre);
-        setYear(album.year);
-        setRating(album.rating)
-        setImageFile(album.imageFile)
-        setImage(album.image);
-    };
+    useEffect(() => {
+        const fetchAlbum = async () => {
+            const album = await AlbumService.getAlbumById(id);
+            setAlbum(album);
+            setId(album.id);
+            setTitle(album.title);
+            setArtist(album.artist);
+            setGenre(album.genre);
+            setYear(album.year);
+            setRating(album.rating)
+            setImageFile(album.imageFile)
+            setImage(album.image);
+        };
+        fetchAlbum();
+    }, []);
 
-    useEffect(()=> {
-        if (albumContext?.albumToEdit && albumContext.albumToEdit.id) {
-            getAlbumFromService(albumContext?.albumToEdit.id)
-        }
-    },[albumContext?.albumToEdit?.id]);
 
     const changeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         switch (name) {
+            case "id":
+                setId(id);
+                break;
             case "title":
                 setTitle(value);
                 break;
@@ -68,6 +71,7 @@ export const UpdateAlbum = () => {
 
     const editAlbum = async () => {
         const album: IAlbum = {
+            id,
             title,
             artist,
             genre,
@@ -76,7 +80,6 @@ export const UpdateAlbum = () => {
             image
         };
         await AlbumService.updateAlbum(album);
-        window.location.reload();
     };
 
     const uploadImage = async () => {
@@ -88,13 +91,14 @@ export const UpdateAlbum = () => {
     const submitChange = () => {
         editAlbum();
         uploadImage();
-        window.location.reload();
     }
 
     return(
 
         <section className="update-container" id="update-character">
 
+
+            <label>Title: </label>
             <input 
                 className="text-input" 
                 type="text" 
@@ -104,6 +108,7 @@ export const UpdateAlbum = () => {
                 value={title}
             />
 
+            <label>Artist: </label>
             <input 
                 className="text-input" 
                 type="text" 
@@ -113,6 +118,7 @@ export const UpdateAlbum = () => {
                 value={artist}
             />
 
+            <label>Genre: </label>
             <input 
                 className="text-input" 
                 type="text" 
@@ -122,6 +128,7 @@ export const UpdateAlbum = () => {
                 value={genre}
             />
 
+            <label>Release Year: </label>
             <input 
                 className="text-input" 
                 type="text" 
@@ -131,6 +138,7 @@ export const UpdateAlbum = () => {
                 value={year}
             />
 
+            <label>Rating: </label>
             <input 
                 className="text-input" 
                 type="text" 
@@ -139,7 +147,8 @@ export const UpdateAlbum = () => {
                 name='rating'
                 value={rating}
             />
-
+            
+            <label>Album Cover:</label>
             <input 
                 className="file-input" 
                 onChange={changeHandler} 

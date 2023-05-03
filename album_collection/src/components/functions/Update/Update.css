@@ -1,0 +1,19 @@
+.update-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.update-container label{
+    grid-column: auto / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.update-container input{
+    grid-column: auto / span 9;
+    margin: 2rem 0.5rem 2rem 0;
+    text-align: center;
+}
+    

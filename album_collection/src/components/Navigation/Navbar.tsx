@@ -1,5 +1,6 @@
 import { Link} from "react-router-dom";
 import * as HiIcons from "react-icons/hi";
+import * as FiIcons from "react-icons/fi";
 import "./Navbar.css"
 import { useState } from "react";
 import { SidebarData } from "./SidebarData";
@@ -16,7 +17,8 @@ export const Navbar = () => {
       
       <div className="navbar">
         
-      <Link to="Home"><h1 className="title">Album Collection</h1></Link>
+      <Link to="Home"><h1 className="title">
+      <FiIcons.FiMusic className="title-icon"/></h1></Link>
         <Link to="#" className="menu-bars">
           <HiIcons.HiMenu onClick={showSidebar}/>
         </Link>
