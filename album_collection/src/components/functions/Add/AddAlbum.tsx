@@ -51,7 +51,6 @@ export const AddAlbum = () => {
             year,
             rating,
         }
-        console.log(album);
         await AlbumService.addAlbum(album)
     }
 
@@ -66,10 +65,12 @@ export const AddAlbum = () => {
     const submitAlbum = () => {
         addAlbum();
         uploadImage();
-    };
+    }
 
+    console.log(title);
 
     return(
+        <>
         <section className="add-container" id="add-function">
 
             <label
@@ -134,5 +135,23 @@ export const AddAlbum = () => {
             />  
 
         </section>
+
+        <section className="album-preview">
+        <div className="title-container__preview">
+                <div>
+                    <h1 className="album-title__preview">{title}</h1>
+                    <h5 className="album-artist__preview">{artist}</h5>
+                </div>
+            </div>
+            <div className="image-container__preview">
+                <img className="image" src={image} alt={title}/>
+                <div className="info-container__preview">
+                    <h2 className="album-rating__preview">{rating}</h2>
+                    <h5 className="album-genre__preview">Genre: {genre}</h5>
+                    <h5 className="album-year__preview">Release Year: {year}</h5>
+                </div>
+            </div>
+        </section>
+        </>
     )
 }

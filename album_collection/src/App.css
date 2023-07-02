@@ -1,25 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
-*{
+body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  color: white;
-  background-color: #313639;
+  background-color: #0c0d0e;
 }
 
-.home, .add{
+.page-container{
+  margin: 1rem;
   display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+  height: 95vh;
+  overflow: hidden;
+  gap: 1rem;
 }
 
-.btn{
-  background: none;
-  border: .5px solid black;
+.album-card-container{
+  background-color: #272b2e;
+  border-radius: 0.5rem;
+  width: 70vw;
+}
+
+.side-container{
+  color: white;
+  background-color: #272b2e;
   border-radius: 1rem;
-  padding: 1rem;
-  text-align: center;
+  height: 100%;
+  width: 20vw;
 }

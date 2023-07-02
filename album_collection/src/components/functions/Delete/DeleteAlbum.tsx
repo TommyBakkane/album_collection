@@ -3,7 +3,7 @@ import { IAlbum } from "../../../interfaces/IAlbum";
 import { AlbumContext } from "../../../context/AlbumContext";
 import { IAlbumContext } from "../../../interfaces/IAlbumContext";
 import { FC } from "react";
-import * as AiIcons from "react-icons/ai";
+import {FaTrash} from "react-icons/fa";
 import "./DeleteAlbum.css";
 
 export const DeleteAlbum: FC<Pick<IAlbum, "id">> = ({ id }) => {
@@ -24,7 +24,7 @@ export const DeleteAlbum: FC<Pick<IAlbum, "id">> = ({ id }) => {
 
     return (
         <button className="delete-btn" onClick={deleteAlbum}>
-            <AiIcons.AiOutlineDelete/>
+            <FaTrash/>
         </button>
     )
 }

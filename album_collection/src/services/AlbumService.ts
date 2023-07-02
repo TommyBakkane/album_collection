@@ -15,6 +15,11 @@ export const AlbumService = (()=> {
         const response = await axios.get(`${endpoints.Albums}/${id}`);
         return response.data
     }
+    
+    const getAlbumByGenre = async (genre: string) => {
+        const response = await axios.get(`${endpoints.Albums}/${genre}`);
+        return response.data
+    }
 
     const addAlbum = async (album: IAlbum) => {
         const response = await axios.post(endpoints.Albums, album);
@@ -36,6 +41,7 @@ export const AlbumService = (()=> {
         getAlbumById,
         addAlbum,
         updateAlbum,
-        deleteAlbum
+        deleteAlbum,
+        getAlbumByGenre
     }
 })(); 

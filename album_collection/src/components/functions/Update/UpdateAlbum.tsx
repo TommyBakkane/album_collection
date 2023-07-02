@@ -37,6 +37,7 @@ export const UpdateAlbum = () => {
         fetchAlbum();
     }, []);
 
+    console.log(album)
 
     const changeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;

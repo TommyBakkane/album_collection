@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8KVmi4GK/FJajTStUtWWixefzDHgzniWEPzJtaqE6oQ=",
+  "Hash": "8y7RD8nZx+1cNrWNEru7ZqR4A/bJ+Sjev4xcsKh8zLc=",
   "Source": "AlbumApi",
   "BasePath": "_content/AlbumApi",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/bon-iver-22-a-million.webp"
+    },
+    {
+      "Identity": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp",
+      "SourceId": "AlbumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/",
+      "BasePath": "_content/AlbumApi",
+      "RelativePath": "images/kanye-west-my-beautiful-dark-twisted-fantasy.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp"
     },
     {
       "Identity": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/images/mac-demarco-2.webp",

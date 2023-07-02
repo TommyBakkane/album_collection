@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using AlbumApi.Models;
+using Microsoft.AspNetCore.Mvc;
 
 #nullable disable
 
@@ -9,5 +10,9 @@ public class AlbumApiContext : DbContext
 {
     public AlbumApiContext(DbContextOptions<AlbumApiContext> options) : base(options){}
 
-    public DbSet<Album> Albums { get; set; } = null!;
+    public DbSet<Album> GetAlbums { get; set; }
+
+    
 }
+
+

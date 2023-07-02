@@ -1,23 +1,55 @@
-.title-container, .info-container, .image-container{
+.album-container__album{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 0 2rem 0;
+    justify-content: start;
+    height: 90vh;
+    margin: 2rem 4rem 1rem 4rem;
+    background-color: #272b2e;
+    color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
+.title-container{
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .album-title{
-    font-size: 3rem;
+    font-size: 5rem;
+    margin: 0;
     text-align: center;
 }
+
 .album-artist{
     font-size: 1.5rem;
     font-weight: 300;
+    text-decoration: underline;
+    margin: 0;
+    text-align: center;
 }
 
-.image{
-    width: 50%;
-    margin: 0 2rem 0 2rem;
+.back-icon, .user-icon{
+    font-size: 3rem;
+    margin: 0;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    margin: 1rem 2rem 0 2rem;
+    
 }
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 4rem;
+}
+
 
 .album-rating{
     font-size: 4rem;
@@ -26,27 +58,32 @@
     border: 5px solid black;
     border-radius: 100%;
     border-color: white;
-    margin-bottom: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .album-genre, .album-year{
     font-size: 1rem;
     font-weight: 200;
+    margin: 0;
 }
 
-.delete-update-container{
+.function-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-    margin: 0 1rem 0 1rem 
+    gap: 10rem;
+    width: 100%; 
+    margin: 4rem 0 2rem 0;
 }
 
-.update-btn{
-    background-color: transparent;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
+.edit-icon svg{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
 }

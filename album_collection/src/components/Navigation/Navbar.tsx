@@ -1,52 +1,30 @@
-import { Link} from "react-router-dom";
-import * as HiIcons from "react-icons/hi";
-import * as FiIcons from "react-icons/fi";
-import "./Navbar.css"
-import { useState } from "react";
-import { SidebarData } from "./SidebarData";
-import { IconContext } from "react-icons";
+import * as AiIcon from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+import { HomePage } from '../../pages/HomePage';
 
 export const Navbar = () => {
-  const [sidebar, setSidebar] = useState(false)
 
-  const showSidebar = () => setSidebar(!sidebar)
-
-    return (
-    <>
-    <IconContext.Provider value={{color: '#fff'}}>
-      
-      <div className="navbar">
-        
-      <Link to="Home"><h1 className="title">
-      <FiIcons.FiMusic className="title-icon"/></h1></Link>
-        <Link to="#" className="menu-bars">
-          <HiIcons.HiMenu onClick={showSidebar}/>
-        </Link>
-      </div>
-
-      <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-        <ul className='nav-menu-items' onClick={showSidebar}>
-          <li className='navbar-toggle'>
-            <Link to='#' className='menu-bars'>
-              <HiIcons.HiX />
-            </Link>
-          </li>
-          {SidebarData.map((item, index) => {
-            return (
-              <li key={index} className={item.cName}>
-                <Link to={item.path}>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </Link>
-              </li>
-            )
-          })}
-        </ul>
-
-      </nav>
-      
-      </IconContext.Provider>
-    </>
-        
-    );
+    return(
+        <>  
+            <nav className="navbar">
+                <ul className="navbar-links">
+                    <li className="navbar-link">
+                        <Link to="/Home"><AiIcon.AiFillHome/></Link>
+                    </li>
+                    <li className="navbar-link">
+                        <a><AiIcon.AiOutlineSearch/></a>
+                    </li>
+                    <li className="navbar-link">
+                        <a><AiIcon.AiOutlineUser/></a>
+                    </li>
+                    <li className="navbar-link">
+                        <a href="/Add"><AiIcon.AiFillPlusCircle/></a>
+                    </li>
+                    
+                    
+                </ul>
+            </nav>
+        </>
+    )
 }

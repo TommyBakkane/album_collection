@@ -1,7 +1,10 @@
 .add-container{
     display: grid;
-    margin: 1rem;
     padding: 1rem;
+    width: 30vw;
+    background-color: #272b2e;
+    border-radius: 1rem;
+    color: white;
 }
 
 .add-header, .text-input, .input-label, .btn{
@@ -37,6 +40,63 @@
 .btn:hover{
     background: #060b26;
     color: white;
+}
+
+.album-preview{
+    width: 50vw;
+    background-color: #272b2e;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+.title-container__preview{
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+    width: 100%;
+}
+.album-title__preview{
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+}
+.album-artist__preview{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: underline;
+    margin: 0;
+    text-align: center;
+}
+.image-container__preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 4rem;
+}
+.album-rating__preview{
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    border: 5px solid black;
+    border-radius: 100%;
+    border-color: white;
+    margin: 0 0 1rem 0;
+}
+
+.info-container__preview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-genre__preview, .album-year__preview{
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0;
 }
 
 ::-webkit-file-upload-button {

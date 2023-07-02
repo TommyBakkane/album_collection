@@ -20,20 +20,52 @@ public class AlbumController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Album>>> GetAlbums()
     {
-        return await _context.Albums.ToListAsync();
+        try
+        {
+            return await _context.GetAlbums.ToListAsync();
+        }
+        catch (Exception)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError,
+                "Error retrieving data from the database");
+        }
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{id:int}")]
     public async Task<ActionResult<Album>> GetAlbum(int id)
     {
-        var album = await _context.Albums.FindAsync(id);
-
-        if (album == null)
+        try
         {
-            return NotFound();
-        }
+            var result = await _context.GetAlbums.FirstOrDefaultAsync(album => album.Id == id);
 
-        return album;
+            if (result == null) return NotFound ();
+
+            return result;
+        }
+        catch (Exception)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError,
+                "Error retrieving data from the database");
+        }
+    }
+
+
+    [HttpGet("{genre}")]
+    public async Task<ActionResult<IEnumerable<Album>>> GetAlbumsByGenre(string genre)
+    {
+        try
+        {
+            var albums = await _context.GetAlbums.Where(album => album.Genre == genre).ToListAsync();
+
+            if (albums == null) return NotFound();
+
+            return albums;
+        }
+        catch (Exception)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError,
+                "Error retrieving data from the database");
+        }
     }
 
     [HttpPut("{id}")]
@@ -68,7 +100,7 @@ public class AlbumController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Album>> PostAlbum(Album album)
     {
-        _context.Albums.Add(album);
+        _context.GetAlbums.Add(album);
         await _context.SaveChangesAsync();
 
         return CreatedAtAction("GetAlbum", new { id = album.Id }, album);
@@ -77,13 +109,13 @@ public class AlbumController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<ActionResult<Album>> DeleteAlbum(int id)
     {
-        var album = await _context.Albums.FindAsync(id);
+        var album = await _context.GetAlbums.FindAsync(id);
         if (album == null)
         {
             return NotFound();
         }
 
-        _context.Albums.Remove(album);
+        _context.GetAlbums.Remove(album);
         await _context.SaveChangesAsync();
 
         return album;
@@ -91,7 +123,7 @@ public class AlbumController : ControllerBase
 
     private bool AlbumExists(int id)
     {
-        return _context.Albums.Any(e => e.Id == id);
+        return _context.GetAlbums.Any(e => e.Id == id);
     }
 
 }
