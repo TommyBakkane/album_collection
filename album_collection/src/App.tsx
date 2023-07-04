@@ -5,20 +5,23 @@ import { AddPage } from './pages/AddPage';
 import { UpdatePage } from './pages/UpdatePage';
 import { Album } from './components/Album/Album';
 import AlbumProvider from './context/AlbumContext';
+import { Navbar } from './components/Navigation/Navbar';
 
 
 function App() {
   return (
-    <AlbumProvider>
-      <Router>
-          <Routes>
-            <Route path="Home" element={ <HomePage/> }></Route>
-            <Route path="Add" element={ <AddPage/> }></Route>
-            <Route path="Update" element={<UpdatePage/>}></Route>
-            <Route path="Album" element={ <Album/> }></Route>
-          </Routes>
-      </Router>
-    </AlbumProvider>
+     <div className='page-wrapper'>
+      <AlbumProvider>
+        <Router>
+            <Routes>
+              <Route path="Home" element={ <HomePage/> }></Route>
+              <Route path="Add" element={ <AddPage/> }></Route>
+              <Route path="Update" element={<UpdatePage/>}></Route>
+              <Route path="Album" element={ <Album/> }></Route>
+            </Routes>
+        </Router>
+      </AlbumProvider>
+   </div>
   );
 }
 

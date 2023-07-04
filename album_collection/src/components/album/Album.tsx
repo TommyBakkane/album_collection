@@ -2,7 +2,7 @@ import { Link, useLocation} from "react-router-dom";
 import { useState, useEffect } from "react";
 import { IAlbum } from "../../interfaces/IAlbum";
 import { AlbumService } from "../../services/AlbumService";
-import './Album.css';
+import './Album.css'
 import * as AiIcons from "react-icons/ai";
 import {AiTwotoneEdit} from "react-icons/ai";
 import { DeleteAlbum } from "../functions/Delete/DeleteAlbum";
@@ -22,7 +22,7 @@ export const Album  = () => {
     }, []);
 
     return(
-        <div className="album-container__album">
+        <div className="album-container">
             <div className="title-container">
                 <Link to="/Home">
                     <AiIcons.AiOutlineArrowLeft className="back-icon" />
@@ -34,7 +34,7 @@ export const Album  = () => {
                 <AiIcons.AiOutlineUser className="user-icon" />
             </div>
             <div className="image-container">
-                <img className="image" src={`https://localhost:7180/images/${album?.image}`} alt={album?.title}/>
+                <img className="album-cover" src={`https://localhost:7180/images/${album?.image}`} alt={album?.title}/>
                 <div className="info-container">
                     <h2 className="album-rating">{album?.rating}</h2>
                     <h5 className="album-genre">Genre: {album?.genre}</h5>

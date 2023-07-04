@@ -3,7 +3,7 @@ import { AlbumService } from "../../../services/AlbumService";
 import { IAlbum } from "../../../interfaces/IAlbum";
 import { ImageUploadService } from "../../../services/ImageUploadService";
 import { useLocation } from "react-router-dom";
-import "./Update.css"
+import "./Update.css";
 
 export const UpdateAlbum = () => {
 

@@ -18,11 +18,11 @@ public class AlbumController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Album>>> GetAlbums()
+    public async Task<ActionResult<IEnumerable<Album>>> GetAlbum()
     {
         try
         {
-            return await _context.GetAlbums.ToListAsync();
+            return await _context.GetAlbum.ToListAsync();
         }
         catch (Exception)
         {
@@ -36,7 +36,7 @@ public class AlbumController : ControllerBase
     {
         try
         {
-            var result = await _context.GetAlbums.FirstOrDefaultAsync(album => album.Id == id);
+            var result = await _context.GetAlbum.FirstOrDefaultAsync(album => album.Id == id);
 
             if (result == null) return NotFound ();
 
@@ -51,11 +51,11 @@ public class AlbumController : ControllerBase
 
 
     [HttpGet("{genre}")]
-    public async Task<ActionResult<IEnumerable<Album>>> GetAlbumsByGenre(string genre)
+    public async Task<ActionResult<IEnumerable<Album>>> GetAlbumByGenre(string genre)
     {
         try
         {
-            var albums = await _context.GetAlbums.Where(album => album.Genre == genre).ToListAsync();
+            var albums = await _context.GetAlbum.Where(album => album.Genre == genre).ToListAsync();
 
             if (albums == null) return NotFound();
 
@@ -100,7 +100,7 @@ public class AlbumController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Album>> PostAlbum(Album album)
     {
-        _context.GetAlbums.Add(album);
+        _context.GetAlbum.Add(album);
         await _context.SaveChangesAsync();
 
         return CreatedAtAction("GetAlbum", new { id = album.Id }, album);
@@ -109,13 +109,13 @@ public class AlbumController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<ActionResult<Album>> DeleteAlbum(int id)
     {
-        var album = await _context.GetAlbums.FindAsync(id);
+        var album = await _context.GetAlbum.FindAsync(id);
         if (album == null)
         {
             return NotFound();
         }
 
-        _context.GetAlbums.Remove(album);
+        _context.GetAlbum.Remove(album);
         await _context.SaveChangesAsync();
 
         return album;
@@ -123,7 +123,7 @@ public class AlbumController : ControllerBase
 
     private bool AlbumExists(int id)
     {
-        return _context.GetAlbums.Any(e => e.Id == id);
+        return _context.GetAlbum.Any(e => e.Id == id);
     }
 
 }

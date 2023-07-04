@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react";
 import { AlbumService } from "../../../services/AlbumService";
 import { IAlbum } from "../../../interfaces/IAlbum";
 import { ImageUploadService } from "../../../services/ImageUploadService";
-import "./AddFunction.css"
+import './AddFunction.css'
 
 export const AddAlbum = () => {
     const [title, setTitle] = useState<string>("");
@@ -74,7 +74,7 @@ export const AddAlbum = () => {
         <section className="add-container" id="add-function">
 
             <label
-                className="add-header"
+                className="title--big"
                 >Add Album:
             </label>
 
@@ -113,6 +113,8 @@ export const AddAlbum = () => {
             <input
                 className="text-input"
                 type="number"
+                min="0"
+                max="100"
                 placeholder="Rating"
                 name="rating"
                 onChange={changeHandler}
@@ -139,8 +141,8 @@ export const AddAlbum = () => {
         <section className="album-preview">
         <div className="title-container__preview">
                 <div>
-                    <h1 className="album-title__preview">{title}</h1>
-                    <h5 className="album-artist__preview">{artist}</h5>
+                    <h1 className="album-title__preview">Title: {title}</h1>
+                    <h5 className="album-artist__preview">Artist: {artist}</h5>
                 </div>
             </div>
             <div className="image-container__preview">

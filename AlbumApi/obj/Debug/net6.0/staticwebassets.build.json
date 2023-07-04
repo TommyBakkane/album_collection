@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8y7RD8nZx+1cNrWNEru7ZqR4A/bJ+Sjev4xcsKh8zLc=",
+  "Hash": "2O+5IU5k4DMw9OQBvXFGrrFlXF2XeVN7c5IFsXN0FEU=",
   "Source": "AlbumApi",
   "BasePath": "_content/AlbumApi",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/phoebe-bridgers-punisher.webp"
+    },
+    {
+      "Identity": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/images/radiohead-a-moon-shaped-pool.webp",
+      "SourceId": "AlbumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/",
+      "BasePath": "_content/AlbumApi",
+      "RelativePath": "images/radiohead-a-moon-shaped-pool.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/radiohead-a-moon-shaped-pool.webp"
     },
     {
       "Identity": "/Users/eier/Desktop/Privat/Album/AlbumApi/wwwroot/images/tyler-the-creator-flower-boy.webp",

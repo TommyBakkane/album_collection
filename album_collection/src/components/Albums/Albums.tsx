@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { AlbumItem } from "./AlbumItem";
 import { AlbumService } from "../../services/AlbumService";
 import { IAlbum } from "../../interfaces/IAlbum";
-import "./ShowGenre.css"
+import './Albums.css'
 
-export const ShowGenre = () => {
+export const Albums = () => {
     const [albums, setAlbums] = useState<IAlbum[]>([]);
 
     useEffect(() => {
@@ -30,28 +30,26 @@ export const ShowGenre = () => {
         ))
     }
 
-    console.log(albums);
-
     return(
         <section className="main-container">
 
-            <div className="genre-container">
-                <h2 className="genre-title">Rap</h2>
-                <div className="album-container">
+            <div className="genre-wrapper">
+                <h2 className="title--big">Rap</h2>
+                <div className="album-carousel">
                     {getAlbumItems().filter(album => album.props.genre === "Rap")}
                 </div>
             </div>
 
-            <div className="genre-container">
-                <h2 className="genre-title">Rock</h2>
-                <div className="album-container">
+            <div className="genre-wrapper">
+                <h2 className="title--big">Rock</h2>
+                <div className="album-carousel">
                     {getAlbumItems().filter(album => album.props.genre === "Rock")}
                 </div>
             </div>
 
-            <div className="genre-container">
-                <h2 className="genre-title">Folk</h2>
-                <div className="album-container">
+            <div className="genre-wrapper">
+                <h2 className="title--big">Folk</h2>
+                <div className="album-carousel">
                     {getAlbumItems().filter(album => album.props.genre === "Folk")}
                 </div>
             </div>

@@ -1,16 +1,16 @@
 import * as AiIcon from 'react-icons/ai';
+import * as BiIcon from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { HomePage } from '../../pages/HomePage';
 
 export const Navbar = () => {
 
     return(
         <>  
-            <nav className="navbar">
+            <nav className="navbar-container">
                 <ul className="navbar-links">
                     <li className="navbar-link">
-                        <Link to="/Home"><AiIcon.AiFillHome/></Link>
+                        <Link to="/Home"><BiIcon.BiHome/></Link>
                     </li>
                     <li className="navbar-link">
                         <a><AiIcon.AiOutlineSearch/></a>
@@ -19,7 +19,7 @@ export const Navbar = () => {
                         <a><AiIcon.AiOutlineUser/></a>
                     </li>
                     <li className="navbar-link">
-                        <a href="/Add"><AiIcon.AiFillPlusCircle/></a>
+                        <a href="/Add"><BiIcon.BiPlusCircle/></a>
                     </li>
                     
                     

@@ -1,23 +1,21 @@
-.navbar{
+/* Navbar CSS */
+.navbar-container{
     width: 10vw;
-    background-color: #272b2e;
     border-radius: 0.5rem;
+    margin-right: 1rem;
   }
-
-.navbar-links{
+  .navbar-links{
     display: flex;
     flex-direction: column;
     margin: 1rem 0 0 0;
     padding: 0;
     align-items: center;
-}
-
+  }
   .navbar-link{
     margin-top: 1rem;
     list-style: none;
     font-size: 3rem;
   }
-
-.navbar-link svg{
-    color: #fff;
-}
+  .navbar-link svg{
+    color: #66fcf1;
+  }
