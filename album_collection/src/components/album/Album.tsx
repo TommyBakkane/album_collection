@@ -2,10 +2,10 @@ import { Link, useLocation} from "react-router-dom";
 import { useState, useEffect } from "react";
 import { IAlbum } from "../../interfaces/IAlbum";
 import { AlbumService } from "../../services/AlbumService";
-import './Album.css'
 import * as AiIcons from "react-icons/ai";
 import {AiTwotoneEdit} from "react-icons/ai";
 import { DeleteAlbum } from "../functions/Delete/DeleteAlbum";
+import '../../styles/Album.css'
 
 export const Album  = () => {
     const location = useLocation();
@@ -22,23 +22,23 @@ export const Album  = () => {
     }, []);
 
     return(
-        <div className="album-container">
-            <div className="title-container">
+        <div className="main-container__album">
+            <div className="title-container__album">
                 <Link to="/Home">
-                    <AiIcons.AiOutlineArrowLeft className="back-icon" />
+                    <AiIcons.AiOutlineArrowLeft className="back-icon__album" />
                 </Link>
                 <div>
-                    <h1 className="album-title">{album?.title}</h1>
-                    <h5 className="album-artist">{album?.artist}</h5>
+                    <h1 className="title__album">{album?.title}</h1>
+                    <h5 className="artist__album">{album?.artist}</h5>
                 </div>
-                <AiIcons.AiOutlineUser className="user-icon" />
+                <AiIcons.AiOutlineUser className="user-icon__album" />
             </div>
-            <div className="image-container">
-                <img className="album-cover" src={`https://localhost:7180/images/${album?.image}`} alt={album?.title}/>
-                <div className="info-container">
-                    <h2 className="album-rating">{album?.rating}</h2>
-                    <h5 className="album-genre">Genre: {album?.genre}</h5>
-                    <h5 className="album-year">Release Year: {album?.year}</h5>
+            <div className="image-container__album">
+                <img className="cover__album" src={`https://localhost:7180/images/${album?.image}`} alt={album?.title}/>
+                <div className="info-container__album">
+                    <h2 className="rating__album">{album?.rating}</h2>
+                    <h5 className="genre__album">Genre: {album?.genre}</h5>
+                    <h5 className="release-year__album">Release Year: {album?.year}</h5>
                 </div>
             </div>
 

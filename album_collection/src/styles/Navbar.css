@@ -2,7 +2,8 @@
 .navbar-container{
     width: 10vw;
     border-radius: 0.5rem;
-    margin-right: 1rem;
+    margin: 0;
+    padding: 0;
   }
   .navbar-links{
     display: flex;

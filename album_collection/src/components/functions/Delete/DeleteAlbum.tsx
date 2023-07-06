@@ -4,7 +4,7 @@ import { AlbumContext } from "../../../context/AlbumContext";
 import { IAlbumContext } from "../../../interfaces/IAlbumContext";
 import { FC } from "react";
 import {FaTrash} from "react-icons/fa";
-import "./DeleteAlbum.css";
+import "../../../styles/Delete.css";
 
 export const DeleteAlbum: FC<Pick<IAlbum, "id">> = ({ id }) => {
     const {albums, deleteAlbumById} = useContext(AlbumContext) as IAlbumContext;

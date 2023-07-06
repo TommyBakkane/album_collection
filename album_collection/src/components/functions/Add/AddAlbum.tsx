@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react";
 import { AlbumService } from "../../../services/AlbumService";
 import { IAlbum } from "../../../interfaces/IAlbum";
 import { ImageUploadService } from "../../../services/ImageUploadService";
-import './AddFunction.css'
+import '../../../styles/Add.css'
 
 export const AddAlbum = () => {
     const [title, setTitle] = useState<string>("");

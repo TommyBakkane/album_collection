@@ -1,16 +1,15 @@
-import './App.css';
+import './styles/General.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { HomePage } from './pages/HomePage';
 import { AddPage } from './pages/AddPage';
 import { UpdatePage } from './pages/UpdatePage';
 import { Album } from './components/Album/Album';
 import AlbumProvider from './context/AlbumContext';
-import { Navbar } from './components/Navigation/Navbar';
+import { LoginPage } from './pages/LoginPage';
 
 
 function App() {
   return (
-     <div className='page-wrapper'>
       <AlbumProvider>
         <Router>
             <Routes>
@@ -21,7 +20,6 @@ function App() {
             </Routes>
         </Router>
       </AlbumProvider>
-   </div>
   );
 }
 
