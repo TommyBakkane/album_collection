@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { AlbumItem } from "./AlbumItem";
 import { AlbumService } from "../../services/AlbumService";
 import { IAlbum } from "../../interfaces/IAlbum";
-import '../../styles/Albums.css'
 
 export const Albums = () => {
     const [albums, setAlbums] = useState<IAlbum[]>([]);

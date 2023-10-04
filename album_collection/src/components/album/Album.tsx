@@ -5,7 +5,6 @@ import { AlbumService } from "../../services/AlbumService";
 import * as AiIcons from "react-icons/ai";
 import {AiTwotoneEdit} from "react-icons/ai";
 import { DeleteAlbum } from "../functions/Delete/DeleteAlbum";
-import '../../styles/Album.css'
 
 export const Album  = () => {
     const location = useLocation();
