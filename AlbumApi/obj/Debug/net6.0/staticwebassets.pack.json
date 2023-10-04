@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/.DS_Store",
+      "PackagePath": "staticwebassets/images/.DS_Store"
+    },
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/bon-iver-22-a-million.webp",
+      "PackagePath": "staticwebassets/images/bon-iver-22-a-million.webp"
+    },
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp",
+      "PackagePath": "staticwebassets/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp"
+    },
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/mac-demarco-2.webp",
+      "PackagePath": "staticwebassets/images/mac-demarco-2.webp"
+    },
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/mac-demarco-another-one.webp",
+      "PackagePath": "staticwebassets/images/mac-demarco-another-one.webp"
+    },
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/mac-miller-circles.webp",
+      "PackagePath": "staticwebassets/images/mac-miller-circles.webp"
+    },
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/phoebe-bridgers-punisher.webp",
+      "PackagePath": "staticwebassets/images/phoebe-bridgers-punisher.webp"
+    },
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/radiohead-a-moon-shaped-pool.webp",
+      "PackagePath": "staticwebassets/images/radiohead-a-moon-shaped-pool.webp"
+    },
+    {
+      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/tyler-the-creator-flower-boy.webp",
+      "PackagePath": "staticwebassets/images/tyler-the-creator-flower-boy.webp"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.AlbumApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.AlbumApi.props",
+      "PackagePath": "build\\AlbumApi.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.AlbumApi.props",
+      "PackagePath": "buildMultiTargeting\\AlbumApi.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.AlbumApi.props",
+      "PackagePath": "buildTransitive\\AlbumApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/eier/Desktop/Privat/Album/AlbumApi/AlbumApi.csproj": {}
+    "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj": {}
   },
   "projects": {
-    "/Users/eier/Desktop/Privat/Album/AlbumApi/AlbumApi.csproj": {
+    "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/eier/Desktop/Privat/Album/AlbumApi/AlbumApi.csproj",
+        "projectUniqueName": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj",
         "projectName": "AlbumApi",
-        "projectPath": "/Users/eier/Desktop/Privat/Album/AlbumApi/AlbumApi.csproj",
-        "packagesPath": "/Users/eier/.nuget/packages/",
-        "outputPath": "/Users/eier/Desktop/Privat/Album/AlbumApi/obj/",
+        "projectPath": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj",
+        "packagesPath": "/Users/tommybakkane/.nuget/packages/",
+        "outputPath": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/eier/.nuget/NuGet/NuGet.Config"
+          "/Users/tommybakkane/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }
