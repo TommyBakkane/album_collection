@@ -1,16 +1,20 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { AddPage } from './pages/AddPage';
-import { UpdatePage } from './pages/UpdatePage';
-import { Album } from './components/album/Album';
-import AlbumProvider from './context/AlbumContext';
-import { LoginPage } from './pages/LoginPage';
 import { MainPage } from "./pages/MainPage";
+import { BrowserRouter as Router, Route, Routes  } from "react-router-dom";
 import './App.css'
+import { AlbumDetail } from "./components/AlbumDetail/AlbumDetail";
 
 
 function App() {
   return (
-    <MainPage />
+    
+    <div className="container">
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage/>} />
+          <Route path="/album" element={<AlbumDetail/>} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

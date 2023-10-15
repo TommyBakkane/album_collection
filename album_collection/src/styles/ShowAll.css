@@ -1,0 +1,16 @@
+.album-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+.album-card{
+    border-radius: 5%;
+    display: flex;
+    justify-self: center;
+}
+.album-cover{
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}

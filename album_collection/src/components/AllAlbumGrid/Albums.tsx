@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { AlbumItem } from "./AlbumItem";
 import { AlbumService } from "../../services/AlbumService";
 import { IAlbum } from "../../interfaces/IAlbum";
+import "../../styles/ShowAll.css"
 
 export const Albums = () => {
     const [albums, setAlbums] = useState<IAlbum[]>([]);
@@ -30,29 +31,8 @@ export const Albums = () => {
     }
 
     return(
-        <section className="main-container">
-
-            <div className="genre-wrapper">
-                <h2 className="title__albums">Rap</h2>
-                <div className="album-carousel">
-                    {getAlbumItems().filter(album => album.props.genre === "Rap")}
-                </div>
-            </div>
-
-            <div className="genre-wrapper">
-                <h2 className="title__albums">Rock</h2>
-                <div className="album-carousel">
-                    {getAlbumItems().filter(album => album.props.genre === "Rock")}
-                </div>
-            </div>
-
-            <div className="genre-wrapper">
-                <h2 className="title__albums">Folk</h2>
-                <div className="album-carousel">
-                    {getAlbumItems().filter(album => album.props.genre === "Folk")}
-                </div>
-            </div>
-        
-        </section>
+        <div className="album-wrapper">
+            {getAlbumItems()}
+        </div>
     )
 }

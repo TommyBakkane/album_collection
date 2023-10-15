@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5Lc9dbn/dec+VOmsxjSOMHikL4RtEeyAtbuChBDcc+g=",
+  "Hash": "c/OGXBQvmU91aZsf8XFJ2sZC33gcJKD8EJaOjtdwsPY=",
   "Source": "AlbumApi",
   "BasePath": "_content/AlbumApi",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AlbumApi/wwwroot",
       "Source": "AlbumApi",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/.DS_Store",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/.DS_Store",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/.DS_Store",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/.DS_Store",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/.DS_Store",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot/images/.DS_Store"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/bon-iver-22-a-million.webp",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/bon-iver-22-a-million.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/bon-iver-22-a-million.webp",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/images/bon-iver-22-a-million.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/kanye-west-my-beautiful-dark-twisted-fantasy.webp",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/mac-demarco-2.webp",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/mac-demarco-2.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/mac-demarco-2.webp",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/images/mac-demarco-2.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/mac-demarco-another-one.webp",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/mac-demarco-another-one.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/mac-demarco-another-one.webp",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/images/mac-demarco-another-one.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/mac-miller-circles.webp",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/mac-miller-circles.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/mac-miller-circles.webp",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/images/mac-miller-circles.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/phoebe-bridgers-punisher.webp",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/phoebe-bridgers-punisher.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/phoebe-bridgers-punisher.webp",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/images/phoebe-bridgers-punisher.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/radiohead-a-moon-shaped-pool.webp",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/radiohead-a-moon-shaped-pool.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/radiohead-a-moon-shaped-pool.webp",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/images/radiohead-a-moon-shaped-pool.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/tyler-the-creator-flower-boy.webp",
+      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/tyler-the-creator-flower-boy.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/",
+      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/tyler-the-creator-flower-boy.webp",
       "AssetKind": "All",

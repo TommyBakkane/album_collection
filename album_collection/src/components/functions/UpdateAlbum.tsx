@@ -1,7 +1,7 @@
 import { useState, ChangeEvent, useContext, useEffect } from "react";
-import { AlbumService } from "../../../services/AlbumService";
-import { IAlbum } from "../../../interfaces/IAlbum";
-import { ImageUploadService } from "../../../services/ImageUploadService";
+import { AlbumService } from "../../services/AlbumService";
+import { IAlbum } from "../../interfaces/IAlbum";
+import { ImageUploadService } from "../../services/ImageUploadService";
 import { useLocation } from "react-router-dom";
 import "../../../styles/Update.css";
 

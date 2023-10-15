@@ -1,7 +1,7 @@
 import { ChangeEvent, useState } from "react";
-import { AlbumService } from "../../../services/AlbumService";
-import { IAlbum } from "../../../interfaces/IAlbum";
-import { ImageUploadService } from "../../../services/ImageUploadService";
+import { AlbumService } from "../../services/AlbumService";
+import { IAlbum } from "../../interfaces/IAlbum";
+import { ImageUploadService } from "../../services/ImageUploadService";
 import '../../../styles/Add.css'
 
 export const AddAlbum = () => {

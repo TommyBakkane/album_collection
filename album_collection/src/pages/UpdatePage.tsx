@@ -1,4 +1,4 @@
-import { UpdateAlbum } from "../components/functions/Update/UpdateAlbum"
+import { UpdateAlbum } from "../components/functions/UpdateAlbum"
 
 export const UpdatePage = () => {  
     return (

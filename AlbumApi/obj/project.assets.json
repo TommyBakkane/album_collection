@@ -1526,11 +1526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj",
+      "projectUniqueName": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/AlbumApi.csproj",
       "projectName": "AlbumApi",
-      "projectPath": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj",
+      "projectPath": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/AlbumApi.csproj",
       "packagesPath": "/Users/tommybakkane/.nuget/packages/",
-      "outputPath": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/obj/",
+      "outputPath": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tommybakkane/.nuget/NuGet/NuGet.Config"
