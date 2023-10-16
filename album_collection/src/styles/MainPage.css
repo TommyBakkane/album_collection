@@ -1,9 +1,13 @@
 .page-wrapper{
     display: flex;
-    gap: 2rem;
-    width: 100%;
-    height: 100vh;    
+    height: 100vh;   
+}
+.page-content{
+    flex: 1;
+    overflow-y: hidden;
 }
 .main-container{
-    width: 100%;
+    height: 85%;
+    overflow-y: auto;
+    padding: 20px;
 }

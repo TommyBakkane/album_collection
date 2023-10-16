@@ -32,8 +32,16 @@ export const AlbumService = (()=> {
     }
 
     const deleteAlbum = async (id: number) => {
+        try{
         const response = await axios.delete(`${endpoints.Albums}/${id}`);
-        return response.data;
+        if(response.status === 200){
+            return;
+        }else {
+            throw new Error("Error deleting album");
+            }
+        } catch (error){
+            throw error;
+        }
     }
 
     return{

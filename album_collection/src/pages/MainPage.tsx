@@ -34,9 +34,11 @@ const MainPage: React.FC<MainPageProps> = () => {
   return (
     <div className="page-wrapper">
       <Sidebar changeContent={changeContent} />
-      <div className="main-container">
+      <div className="page-content">
         <Header />
+        <div className="main-container">
         {contentToRender}
+        </div>
       </div>
     </div>
   );

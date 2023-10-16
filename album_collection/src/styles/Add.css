@@ -1,66 +1,56 @@
-.add-container {
-    margin: 3rem 0rem;
+.add-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.add-title{
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.add-preview-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
   }
   
   .add-form {
-    height: 500px;
+    height: 550px;
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #2C5364 ;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  
-  .add-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
   }
   
   .text-input {
     width: 90%;
-    padding: 10px;
-    margin: 5px 0;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    background: #2C5364 ;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+  }
+  .file-input {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
   }
   
-
-  .file-input {
-    display: none; 
-  }
-  
-  .file-input label {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  .btn {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
   .album-preview {
-    height: 500px;
+    height: 550px;
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #2C5364 ;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -110,3 +100,19 @@
   .album-genre{
     margin-top: 2rem;
   }
+
+.btn-container{
+  text-align: center;
+  margin-top: 20px;
+}
+.btn {
+  background-color: #fff;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}

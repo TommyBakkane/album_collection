@@ -3,8 +3,7 @@ import { useState, useEffect } from "react";
 import { IAlbum } from "../interfaces/IAlbum";
 import { AlbumService } from "../services/AlbumService";
 import * as AiIcons from "react-icons/ai";
-import {AiTwotoneEdit} from "react-icons/ai";
-import { DeleteAlbum } from "./functions/Delete";
+import {FaTrashCan} from "react-icons/fa6";
 import "../styles/Detail.css"
 
 export const Detail  = () => {
@@ -19,7 +18,20 @@ export const Detail  = () => {
             setAlbum(album);
         };
         fetchAlbum();
-    }, []);
+    }, [id]);
+
+    const handleDelete = async () => {
+        if (album && album.id !== undefined){
+        try {
+            await AlbumService.deleteAlbum(album?.id);
+            alert("Album deleted");
+        }catch (error){
+            console.error("Error deleting album:", error);
+        }
+    }else {
+        console.error("Album not found");
+    }
+    };
 
     return(
         <div className="detail-container">
@@ -42,19 +54,20 @@ export const Detail  = () => {
                 <h5 className="detail-release">Release Year: {album?.year}</h5>
             </div>
 
-            {/* 
+             
             <div className="function-container">
 
-                <DeleteAlbum id={album?.id!} />
-    
+            <div onClick={handleDelete}>
+                <FaTrashCan />
+                </div>
+            
                 <Link 
                 to={"/update"}
                 state={{id}} 
                 className="edit-icon">
-                    <AiTwotoneEdit />
+                    <AiIcons.AiTwotoneEdit />
                 </Link>
             </div>
-            */}
         </div>
     )
 

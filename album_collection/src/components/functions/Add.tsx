@@ -30,15 +30,19 @@ export const Add = () => {
       case "artist":
         setArtist(value);
         break;
-      case "genre":
-        setGenre(value);
-        break;
       case "year":
         setYear(parseInt(value));
         break;
       case "rating":
         setRating(parseInt(value));
         break;
+    }
+  };
+
+  const selectChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    if (name === "genre") {
+      setGenre(value);
     }
   };
 
@@ -51,6 +55,7 @@ export const Add = () => {
       year,
       rating,
     };
+    console.log(album);
     await AlbumService.addAlbum(album);
   };
 
@@ -70,84 +75,109 @@ export const Add = () => {
 
   return (
     <div className="add-container">
-      <form className="add-form" id="add-function">
-        <label className="add-title">Add Album:</label>
-
-        <input
-          className="text-input"
-          type="text"
-          placeholder="Title"
-          name="title"
-          onChange={changeHandler}
-        />
-
-        <input
-          className="text-input"
-          type="text"
-          placeholder="Artist"
-          name="artist"
-          onChange={changeHandler}
-        />
-
-        <input
-          className="text-input"
-          type="text"
-          placeholder="Genre"
-          name="genre"
-          onChange={changeHandler}
-        />
-
-        <input
-          className="text-input"
-          type="number"
-          placeholder="Release Year"
-          name="year"
-          onChange={changeHandler}
-        />
-
-        <input
-          className="text-input"
-          type="number"
-          min="0"
-          max="100"
-          placeholder="Rating"
-          name="rating"
-          onChange={changeHandler}
-        />
-
-        <label>
+      <h2 className="add-title">Add new Album</h2>
+      <div className="add-preview-container">
+        <form className="add-form" id="add-function">
+          <label className="form-label">Title</label>
           <input
-            className="file-input"
+            className="text-input"
+            type="text"
+            placeholder="Title"
+            name="title"
             onChange={changeHandler}
-            type="file"
-            name="image"
           />
-        </label>
+          <label className="form-label">Artist</label>
+          <input
+            className="text-input"
+            type="text"
+            placeholder="Artist"
+            name="artist"
+            onChange={changeHandler}
+          />
+          <label className="form-label">Genre</label>
+          <select
+            className="text-input"
+            name="genre"
+            onChange={selectChangeHandler}
+            style={{ width: "98%" }}
+          >
+            <option value="">Select Genre</option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Folk">Folk</option>
+            <option value="R&B">R&B</option>
+            <option value="Country">Country</option>
+            <option value="Soul">Soul</option>
+            <option value="Electronic">Electronic</option>
+          </select>
 
+          <label className="form-label">Release Year</label>
+          <input
+            className="text-input"
+            type="number"
+            placeholder="Release Year"
+            name="year"
+            min="0"
+            max="3000"
+            onChange={changeHandler}
+          />
+
+          <label className="form-label">Rating</label>
+          <input
+            className="text-input"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="Rating"
+            name="rating"
+            onChange={changeHandler}
+          />
+
+          <label className="form-label">Album Cover</label>
+          <label>
+            <input
+              className="file-input"
+              onChange={changeHandler}
+              type="file"
+              name="image"
+            />
+          </label>
+        </form>
+
+        <section className="album-preview">
+          <div className="title-container__preview">
+            <div>
+              <h1 className="album-title__preview">
+                {title ? title : "Title"}
+              </h1>
+              <h5 className="album-artist__preview">
+                {artist ? artist : "Artists"}
+              </h5>
+            </div>
+          </div>
+          <div className="image-container__preview">
+            <img className="image" src={image} alt={title} />
+            <div className="info-container">
+              <h2 className="album-rating__preview">
+                {rating ? rating : "100"}
+              </h2>
+              <h5 className="album-genre">{genre ? genre : "Genre"}</h5>
+              <h5 className="album-year__preview">
+                {year ? year : "Release Year"}
+              </h5>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div className="btn-container">
         <input
-          className="btn"
-          type="button"
-          value="Submit"
-          onClick={submitAlbum}
-        />
-      </form>
-
-      <section className="album-preview">
-        <div className="title-container__preview">
-          <div>
-            <h1 className="album-title__preview">{title}</h1>
-            <h5 className="album-artist__preview">{artist}</h5>
-          </div>
+              className="btn"
+              type="button"
+              value="Add Album"
+              onClick={submitAlbum}
+            />
         </div>
-        <div className="image-container__preview">
-          <img className="image" src={image} alt={title} />
-          <div className="info-container">
-            <h2 className="album-rating__preview">{rating}</h2>
-            <h5 className="album-genre">{genre}</h5>
-            <h5 className="album-year__preview">{year}</h5>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
