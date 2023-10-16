@@ -1,13 +1,13 @@
 import { Link, useLocation} from "react-router-dom";
 import { useState, useEffect } from "react";
-import { IAlbum } from "../../interfaces/IAlbum";
-import { AlbumService } from "../../services/AlbumService";
+import { IAlbum } from "../interfaces/IAlbum";
+import { AlbumService } from "../services/AlbumService";
 import * as AiIcons from "react-icons/ai";
 import {AiTwotoneEdit} from "react-icons/ai";
-import { DeleteAlbum } from "../functions/DeleteAlbum";
-import "../../styles/AlbumDetail.css"
+import { DeleteAlbum } from "./functions/Delete";
+import "../styles/Detail.css"
 
-export const AlbumDetail  = () => {
+export const Detail  = () => {
     const location = useLocation();
     const id = location.state?.id;
 
@@ -33,7 +33,7 @@ export const AlbumDetail  = () => {
             </div>
 
             <div className="detail-image-container">
-                <img src={`https://localhost:7180/images/${album?.image}`} alt={album?.title} className="detail-image"/>
+                <img src={`https://localhost:7180/images/${album?.image}`} alt={album?.title} width="300px" className="detail-image"/>
             </div>
 
             <div className="detail-info">

@@ -5,7 +5,7 @@ import { ImageUploadService } from "../../services/ImageUploadService";
 import { useLocation } from "react-router-dom";
 import "../../../styles/Update.css";
 
-export const UpdateAlbum = () => {
+export const Update = () => {
 
     const location = useLocation();
     const id = location.state?.id;

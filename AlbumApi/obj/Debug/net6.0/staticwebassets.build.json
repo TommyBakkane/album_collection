@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c/OGXBQvmU91aZsf8XFJ2sZC33gcJKD8EJaOjtdwsPY=",
+  "Hash": "1BZmpfHxpbSW9cTe1EkpJrPj3OvFJhQVV4O4BhGowuU=",
   "Source": "AlbumApi",
   "BasePath": "_content/AlbumApi",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "AlbumApi/wwwroot",
+      "Name": "AlbumApi\\wwwroot",
       "Source": "AlbumApi",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/.DS_Store",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\.DS_Store",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/.DS_Store"
+      "OriginalItemSpec": "wwwroot\\.DS_Store"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/.DS_Store",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\.DS_Store",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/.DS_Store",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/.DS_Store"
+      "OriginalItemSpec": "wwwroot\\images\\.DS_Store"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/bon-iver-22-a-million.webp",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\bon-iver-22-a-million.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/bon-iver-22-a-million.webp",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/bon-iver-22-a-million.webp"
+      "OriginalItemSpec": "wwwroot\\images\\bon-iver-22-a-million.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\kanye-west-my-beautiful-dark-twisted-fantasy.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/kanye-west-my-beautiful-dark-twisted-fantasy.webp",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp"
+      "OriginalItemSpec": "wwwroot\\images\\kanye-west-my-beautiful-dark-twisted-fantasy.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/mac-demarco-2.webp",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\mac-demarco-2.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/mac-demarco-2.webp",
       "AssetKind": "All",
@@ -99,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/mac-demarco-2.webp"
+      "OriginalItemSpec": "wwwroot\\images\\mac-demarco-2.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/mac-demarco-another-one.webp",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\mac-demarco-another-one.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/mac-demarco-another-one.webp",
       "AssetKind": "All",
@@ -116,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/mac-demarco-another-one.webp"
+      "OriginalItemSpec": "wwwroot\\images\\mac-demarco-another-one.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/mac-miller-circles.webp",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\mac-miller-circles.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/mac-miller-circles.webp",
       "AssetKind": "All",
@@ -133,13 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/mac-miller-circles.webp"
+      "OriginalItemSpec": "wwwroot\\images\\mac-miller-circles.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/phoebe-bridgers-punisher.webp",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\phoebe-bridgers-punisher.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/phoebe-bridgers-punisher.webp",
       "AssetKind": "All",
@@ -150,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/phoebe-bridgers-punisher.webp"
+      "OriginalItemSpec": "wwwroot\\images\\phoebe-bridgers-punisher.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/radiohead-a-moon-shaped-pool.webp",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\radiohead-a-moon-shaped-pool.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/radiohead-a-moon-shaped-pool.webp",
       "AssetKind": "All",
@@ -167,13 +167,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/radiohead-a-moon-shaped-pool.webp"
+      "OriginalItemSpec": "wwwroot\\images\\radiohead-a-moon-shaped-pool.webp"
     },
     {
-      "Identity": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/images/tyler-the-creator-flower-boy.webp",
+      "Identity": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\tyler-the-creator-flower-boy.webp",
       "SourceId": "AlbumApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tommybakkane/Desktop/Webutvikling/Album Collection/AlbumApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\",
       "BasePath": "_content/AlbumApi",
       "RelativePath": "images/tyler-the-creator-flower-boy.webp",
       "AssetKind": "All",
@@ -184,7 +184,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/tyler-the-creator-flower-boy.webp"
+      "OriginalItemSpec": "wwwroot\\images\\tyler-the-creator-flower-boy.webp"
     }
   ]
 }

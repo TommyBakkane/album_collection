@@ -1,0 +1,25 @@
+.album-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.album-cover{
+    width: 300px;
+    border-radius: 5px;
+}
+.genre-container{
+    margin-bottom: 2rem;
+}
+.genre-box{
+    display: flex;
+    gap: 1rem;
+    overflow-x: hidden;
+}
+.genre-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
