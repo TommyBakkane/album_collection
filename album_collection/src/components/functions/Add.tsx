@@ -157,7 +157,7 @@ export const Add = () => {
             </div>
           </div>
           <div className="image-container__preview">
-            <img className="image" src={image} alt={title} />
+            <img className="image" src={require("../../assets/images/album-placeholder.png")} alt={title} />
             <div className="info-container">
               <h2 className="album-rating__preview">
                 {rating ? rating : "100"}

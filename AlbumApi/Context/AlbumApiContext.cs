@@ -8,8 +8,8 @@ namespace AlbumApi.Context;
 
 public class AlbumApiContext : DbContext
 {
-    public AlbumApiContext(DbContextOptions<AlbumApiContext> options) : base(options){}
-    public DbSet<AlbumApi.Models.Album> GetAlbum { get; set; }
+    public AlbumApiContext(DbContextOptions<AlbumApiContext> options) : base(options) { }
+    public DbSet<Models.Album> GetAlbum { get; set; }
 }
 
 

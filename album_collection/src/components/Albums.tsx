@@ -8,7 +8,13 @@ export const AlbumItem: FC<IAlbum> = ({ id, title, image, artist }) => {
     return (
         <div className="album-card">
             <Link to={`/album`} state={{ id }}>
+                <div className="album-card-inner">
                     <img className='album-cover' src={`https://localhost:7180/images/${image}`} alt={title} width="300px" height="300px" />
+                    <div className="album-info">
+                        <h3>{title}</h3>
+
+                    </div>
+                </div>
             </Link>
         </div>
     );

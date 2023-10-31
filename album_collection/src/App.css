@@ -21,7 +21,7 @@ select, input::placeholder{
 
 /* Scrollbar Css */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 4px;
   }
   
   ::-webkit-scrollbar {

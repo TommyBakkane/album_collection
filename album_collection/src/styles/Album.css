@@ -1,16 +1,20 @@
 .album-container{
-    padding: 0;
-    margin: 0;
+    overflow-y: auto;
 }
 
 .album-cover{
     width: 200px;
     height: 200px;
     border-radius: 5px;
+    
 }
 .genre-container{
-    margin-bottom: 2rem;
+    position: relative;
+    margin: 2rem 0;
     overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem 2rem;
+    border-radius: 15px;
 }
 .genre-box{
     display: flex;
@@ -22,4 +26,38 @@
     margin: 0;
     padding: 0;
     color: #fff;
+}
+.album-card {
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.album-card:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.album-card-inner {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.album-info {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .4);
+    color: black;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.2s;
+}
+
+.album-card:hover .album-info {
+    transform: translateY(0);
 }

@@ -1,7 +1,13 @@
 .sidebar-container {
-  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10%;
   color: #fff;
-  margin: 1rem 1rem;
+  background-color: rgba(255, 255, 255, .2);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px;
 }
 .profile-container {
   display: flex;
@@ -38,7 +44,7 @@
   cursor: pointer;
   margin: 0.3rem 0;
 }
-.log-container {
+.login-btn{
   margin-top: auto;
-  font-size: 0.7rem;
+  align-self: center;
 }

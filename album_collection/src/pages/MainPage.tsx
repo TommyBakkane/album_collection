@@ -5,10 +5,13 @@ import { Header } from "../components/Header";
 import { Add } from "../components/functions/Add";
 import "../styles/MainPage.css";
 import { Detail } from "../components/Detail";
+import { Profile } from "../components/Profile";
+import { WishList } from "../components/Wishlist";
+import { Discover } from "../components/Discover";
 
 interface MainPageProps {}
 
-type ContentType = 'Albums' | 'AddAlbum' | 'Details';
+type ContentType = 'Albums' | 'AddAlbum' | 'Details'| "Profile" | "WishList" | "Discover";
 
 const MainPage: React.FC<MainPageProps> = () => {
   const [contentToRender, setContentToRender] = useState<JSX.Element>(<Albums />);
@@ -19,11 +22,17 @@ const MainPage: React.FC<MainPageProps> = () => {
       case 'Albums':
         contentComponent = <Albums />;
         break;
-      case 'AddAlbum':
-        contentComponent = <Add />;
+      case 'Discover':
+        contentComponent = <Discover />;
         break;
         case 'Details':
         contentComponent = <Detail />;
+        break;
+        case 'Profile':
+        contentComponent = <Profile />;
+        break;
+        case 'WishList':
+        contentComponent = <WishList />;
         break;
       default:
         contentComponent = <Albums />;
