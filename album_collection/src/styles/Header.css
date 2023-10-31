@@ -1,14 +1,29 @@
 .header-container{
-    background-color: #1f2833;
-    width: 100%;
-    border-radius: 0.5rem;
-    display: grid;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 1rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+.header-text{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-icon{
+    width: 50px;
 }
 
 .header-title{
-    font-size: 4rem;
-    font-weight: 400;
-    margin: 0 2rem 0 0;
-    justify-self: end;
-    color: #66fcf1;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.profile-img{
+    width: 50px;
 }

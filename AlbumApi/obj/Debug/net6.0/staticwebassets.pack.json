@@ -1,59 +1,95 @@
 {
   "Files": [
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/.DS_Store",
-      "PackagePath": "staticwebassets/.DS_Store"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\.DS_Store",
+      "PackagePath": "staticwebassets\\.DS_Store"
     },
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/.DS_Store",
-      "PackagePath": "staticwebassets/images/.DS_Store"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\.DS_Store"
     },
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/bon-iver-22-a-million.webp",
-      "PackagePath": "staticwebassets/images/bon-iver-22-a-million.webp"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\Billie_Eilish_-_Don't_Smile_at_Me.png",
+      "PackagePath": "staticwebassets\\images\\Billie_Eilish_-_Don't_Smile_at_Me.png"
     },
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp",
-      "PackagePath": "staticwebassets/images/kanye-west-my-beautiful-dark-twisted-fantasy.webp"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\Bloom_by_RÜFÜS.jpg",
+      "PackagePath": "staticwebassets\\images\\Bloom_by_RÜFÜS.jpg"
     },
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/mac-demarco-2.webp",
-      "PackagePath": "staticwebassets/images/mac-demarco-2.webp"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\Khruangbin_The_Universe_Smiles_Upon_You_Cover.png",
+      "PackagePath": "staticwebassets\\images\\Khruangbin_The_Universe_Smiles_Upon_You_Cover.png"
     },
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/mac-demarco-another-one.webp",
-      "PackagePath": "staticwebassets/images/mac-demarco-another-one.webp"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\Phoebe-Bridgers-Stranger-in-the-Alps.jpg",
+      "PackagePath": "staticwebassets\\images\\Phoebe-Bridgers-Stranger-in-the-Alps.jpg"
     },
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/mac-miller-circles.webp",
-      "PackagePath": "staticwebassets/images/mac-miller-circles.webp"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\aiony-haust-3TLl_97HNJo-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\aiony-haust-3TLl_97HNJo-unsplash.jpg"
     },
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/phoebe-bridgers-punisher.webp",
-      "PackagePath": "staticwebassets/images/phoebe-bridgers-punisher.webp"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\amomentapart.jpg",
+      "PackagePath": "staticwebassets\\images\\amomentapart.jpg"
     },
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/radiohead-a-moon-shaped-pool.webp",
-      "PackagePath": "staticwebassets/images/radiohead-a-moon-shaped-pool.webp"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\bon-iver-22-a-million.webp",
+      "PackagePath": "staticwebassets\\images\\bon-iver-22-a-million.webp"
     },
     {
-      "Id": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/wwwroot/images/tyler-the-creator-flower-boy.webp",
-      "PackagePath": "staticwebassets/images/tyler-the-creator-flower-boy.webp"
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\bon-iver.jpg",
+      "PackagePath": "staticwebassets\\images\\bon-iver.jpg"
     },
     {
-      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.AlbumApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\currents.jpg",
+      "PackagePath": "staticwebassets\\images\\currents.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\kanye-west-my-beautiful-dark-twisted-fantasy.webp",
+      "PackagePath": "staticwebassets\\images\\kanye-west-my-beautiful-dark-twisted-fantasy.webp"
+    },
+    {
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\m83-hurry-up-were-dreaming.jpg",
+      "PackagePath": "staticwebassets\\images\\m83-hurry-up-were-dreaming.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\mac-demarco-2.webp",
+      "PackagePath": "staticwebassets\\images\\mac-demarco-2.webp"
+    },
+    {
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\mac-demarco-another-one.webp",
+      "PackagePath": "staticwebassets\\images\\mac-demarco-another-one.webp"
+    },
+    {
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\mac-miller-circles.webp",
+      "PackagePath": "staticwebassets\\images\\mac-miller-circles.webp"
+    },
+    {
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\phoebe-bridgers-punisher.webp",
+      "PackagePath": "staticwebassets\\images\\phoebe-bridgers-punisher.webp"
+    },
+    {
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\radiohead-a-moon-shaped-pool.webp",
+      "PackagePath": "staticwebassets\\images\\radiohead-a-moon-shaped-pool.webp"
+    },
+    {
+      "Id": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\wwwroot\\images\\tyler-the-creator-flower-boy.webp",
+      "PackagePath": "staticwebassets\\images\\tyler-the-creator-flower-boy.webp"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.AlbumApi.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.AlbumApi.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.AlbumApi.props",
       "PackagePath": "build\\AlbumApi.props"
     },
     {
-      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.AlbumApi.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.AlbumApi.props",
       "PackagePath": "buildMultiTargeting\\AlbumApi.props"
     },
     {
-      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.AlbumApi.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.AlbumApi.props",
       "PackagePath": "buildTransitive\\AlbumApi.props"
     }
   ],

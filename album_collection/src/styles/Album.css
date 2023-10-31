@@ -1,90 +1,63 @@
-.main-container__album{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    background-color: #1f2833;
-    color: #fff;
-    border-radius: 1rem;
-    margin: 2rem 5rem 0 5rem;
+.album-container{
+    overflow-y: auto;
 }
 
-.title-container__album{
-    margin: 1rem 0 1rem 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.title__album{
-    font-size: 5rem;
-    margin: 0;
-    text-align: center;
-    color: #66fcf1;
-}
-
-.artist__album{
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-decoration: underline;
-    margin: 0;
-    text-align: center;
-}
-
-.back-icon__album, .user-icon__album{
-    font-size: 3rem;
-    margin: 0;
-    cursor: pointer;
-    color: #fff;
-    transition: all 0.2s ease-in-out;
-    margin: 1rem 2rem 0 2rem;
+.album-cover{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
     
 }
-
-.image-container__album{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin-top: 4rem;
+.genre-container{
+    position: relative;
+    margin: 2rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem 2rem;
+    border-radius: 15px;
 }
-
-
-.rating__album{
-    font-size: 4rem;
+.genre-box{
+    display: flex;
+    gap: 1rem;
+}
+.genre-title{
+    font-size: 2rem;
     font-weight: 400;
-    padding: 2rem 2.5rem 2rem 2.5rem;
-    border: 5px solid black;
-    border-radius: 100%;
-    border-color: #66fcf1;
-    color: #66fcf1;
-    margin: 0 0 1rem 0;
-}
-
-.info-container__album{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.genre__album, .release-year__album{
-    font-size: 1rem;
-    font-weight: 200;
     margin: 0;
-}
-
-.function-container{
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-    width: 100%; 
-    margin: 4rem 0 2rem 0;
-}
-
-.edit-icon svg{
-    text-decoration: none;
+    padding: 0;
     color: #fff;
-    font-size: 2.5rem;
+}
+.album-card {
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.album-card:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.album-card-inner {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.album-info {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .4);
+    color: black;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.2s;
+}
+
+.album-card:hover .album-info {
+    transform: translateY(0);
 }

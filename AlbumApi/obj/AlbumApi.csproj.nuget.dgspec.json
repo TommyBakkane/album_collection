@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj": {}
+    "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\AlbumApi.csproj": {}
   },
   "projects": {
-    "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj": {
+    "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\AlbumApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj",
+        "projectUniqueName": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\AlbumApi.csproj",
         "projectName": "AlbumApi",
-        "projectPath": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/AlbumApi.csproj",
-        "packagesPath": "/Users/tommybakkane/.nuget/packages/",
-        "outputPath": "/Users/tommybakkane/Desktop/Webutvikling/album_collection/AlbumApi/obj/",
+        "projectPath": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\AlbumApi.csproj",
+        "packagesPath": "C:\\Users\\tommy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tommy\\OneDrive\\Documents\\GitHub\\album_collection\\albumapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tommybakkane/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tommy\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -64,6 +64,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.23, 6.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.23, 6.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.23, 6.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.23, 6.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -72,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

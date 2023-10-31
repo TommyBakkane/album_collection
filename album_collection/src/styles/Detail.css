@@ -1,0 +1,59 @@
+.detail-container{
+    color: #fff;
+    margin: 1rem;
+}
+.icon-detail{
+    color: #fff;
+    font-size: 4rem;
+}
+
+.detail-header{
+    text-align: center;
+    margin-top: -1.5rem;
+}
+.detail-title{
+    font-size: 4rem;
+    font-weight: 300;
+}
+.detail-artist{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: -2.5rem;
+}
+.detail-image-container{
+    display: flex;
+    justify-content: center;
+}
+.detail-image{
+    max-width: 90%;
+}
+
+.detail-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.detail-rating{
+    margin: 0;
+    width: 150px; 
+    height: 150px;
+    border: 5px solid #fff;
+    border-radius: 50%; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 3rem;
+}
+.detail-genre{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: .5rem;
+}
+.detail-release{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: -2rem;
+}

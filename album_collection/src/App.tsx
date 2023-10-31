@@ -1,25 +1,21 @@
-import './styles/General.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { HomePage } from './pages/HomePage';
-import { AddPage } from './pages/AddPage';
-import { UpdatePage } from './pages/UpdatePage';
-import { Album } from './components/album/Album';
-import AlbumProvider from './context/AlbumContext';
-import { LoginPage } from './pages/LoginPage';
+import MainPage from "./pages/MainPage";
+import { BrowserRouter as Router, Route, Routes  } from "react-router-dom";
+import './App.css'
+import { Detail } from "./components/Detail";
+import "./styles/Album.css"
+import "./styles/Header.css"
+import { Add } from "./components/functions/Add";
 
 
 function App() {
   return (
-      <AlbumProvider>
-        <Router>
-            <Routes>
-              <Route path="Home" element={ <HomePage/> }></Route>
-              <Route path="Add" element={ <AddPage/> }></Route>
-              <Route path="Update" element={<UpdatePage/>}></Route>
-              <Route path="Album" element={ <Album/> }></Route>
-            </Routes>
-        </Router>
-      </AlbumProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage/>} />
+          <Route path="/album" element={<Detail/>} />
+          <Route path="/add" element={<Add/>} />
+        </Routes>
+      </Router>
   );
 }
 
